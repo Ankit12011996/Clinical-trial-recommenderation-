@@ -9,7 +9,7 @@ The project involves using a fine-tuned BERT transformer model and collaborative
 #### Get all items
 
 ```http
-  GET ClinicalTrials.gov/api/query/field_values?expr=heart+attack&field=Condition
+  GET ClinicalTrials.gov/api/query/field_values?expr=Anxiety+Autism+Schizophrenia&field=Condition
 ```
 
 
@@ -26,7 +26,9 @@ pip install flask
 [](https://linktodocumentation)
 
 
-
+1.Use code_bert.ipynb to train the transformer model, 
+2.trial_recommender.ipynb to make collaborative filtering,
+3.app.py is to access front-end in flask(HTML & CSS)
 
 If you want to fine tune the model for other task, you need to follow the same data-structure as in selected_columns.csv, that is features(comma-seperated text) and label (numerically encoded).
 
